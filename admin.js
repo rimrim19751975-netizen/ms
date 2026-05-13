@@ -265,7 +265,7 @@ function bindAdmin() {
         return;
       }
       if (key === "cover") {
-        Hikma.downloadBlob(await fetch(`${adminAssetPrefix}assets/book-cover.svg`).then(r => r.blob()), "book-cover.svg");
+        Hikma.downloadBlob(await fetch(`${adminAssetPrefix}assets/book-cover.jpeg`).then(r => r.blob()), "book-cover.jpeg");
         return;
       }
       const bundled = await Hikma.fetchBundledBook(adminAssetPrefix);
